@@ -149,8 +149,6 @@ LICENSE
 
 #ifndef INCLUDE_STB_IMAGE_WRITE_H
 #define INCLUDE_STB_IMAGE_WRITE_H
-// #endif
-// UNCOMMENT ENDIF
 
 #include <stdlib.h>
 
