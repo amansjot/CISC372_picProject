@@ -1,0 +1,15 @@
+Script started on Mon Oct 30 21:17:04 2023
+[amans@r1n09 CISC372_picProject]$ make image-o
+gcc image-o.c -o image-o -fopenmp -lm
+[amans@r1n09 CISC372_picProject]$ srun ./image-o pic1.jpg edge
+Took 7 seconds
+[amans@r1n09 CISC372_picProject]$ make clean
+rm -f image image-p image-o output.png
+[amans@r1n09 CISC372_picProject]$ make image-p
+gcc -std=c99 image-p.c -o image-p -lpthread -lm
+[amans@r1n09 CISC372_picProject]$ srun ./image-p pic1.jpg edge
+Took 6 seconds
+[amans@r1n09 CISC372_picProject]$ exit
+exit
+
+Script done on Mon Oct 30 21:18:32 2023
